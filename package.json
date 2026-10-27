@@ -1,0 +1,14 @@
+{
+  "name": "jenkins-advanced-cicd-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A beginner-friendly application for demonstrating advanced Jenkins CI/CD pipeline features.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "build": "node scripts/build.js",
+    "test": "node --test",
+    "check": "node --check app.js && node --check scripts/build.js && node --check scripts/deploy.js && node --check scripts/metadata-check.js && node --check test/app.test.js",
+    "metadata-check": "node scripts/metadata-check.js"
+  }
+}
